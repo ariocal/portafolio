@@ -1,123 +1,166 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en"
+      data-theme="light">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="index.js"></script>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+          href="styles.css">
+    <script defer
+            src="index.js"></script>
     <title>Mario Calderon</title>
 </head>
 
 <body>
-    <header class="container-header">
+
+    <!--SECTION HEADER-->
+    <header class="container-header #container-header">
         <div class="logo">
-            <img src="/assets/logo2.png" class="logo-img" alt="My logo">
+            <img src="/assets/logo2.png"
+                 class="logo-img"
+                 alt="My logo">
         </div>
-<div class="mode">
-    
-            <button class="dark-mode-btn" aria-label="Activar mode dark">
-                <img src="/assets/icon/onoff.png"/>
+        <div class="mode">
+
+            <button class="dark-mode-btn"
+                    aria-label="Activar mode dark">
+                <img src="/assets/icon/onoff.png" />
             </button>
-            <button class="light-mode-btn" aria-label="Activar mode light">
-                <img src="/assets/icon/onoff.png"/>
+            <button class="light-mode-btn"
+                    aria-label="Activar mode light">
+                <img src="/assets/icon/onoff.png" />
             </button>
-</div>
+        </div>
 
 
         <nav id="navbar">
             <button class="nav-icon-button nav-icon-bars">
                 <i>
-                    <svg class="nav-icon-bars" onclick="showdisguise()" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    <svg class="nav-icon-bars"
+                         onclick="showdisguise()"
+                         xmlns="http://www.w3.org/2000/svg"
+                         fill="none"
+                         viewBox="0 0 24 24"
+                         stroke-width="1.5"
+                         stroke="currentColor"
+                         class="w-6 h-6">
+                        <path stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                     </svg>
                 </i>
             </button>
 
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a class="nav-menu-link" href="#welcome-section">Home</a>
+                    <a class="nav-menu-link"
+                       href="#welcome-section">Home</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-menu-link" href="#About">About</a>
+                    <a class="nav-menu-link"
+                       href="#About">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-menu-link" href="#container-projects">Work</a>
+                    <a class="nav-menu-link"
+                       href="#container-projects">Work</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-menu-link" href="#Skills">Skills</a>
+                    <a class="nav-menu-link"
+                       href="#Skills">Skills</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-menu-link" href="#contact">Contact</a>
+                    <a class="nav-menu-link"
+                       href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-
+<!--SECTION WELCOME-->
     <section id="welcome-section">
         <div class="welcome-container">
 
             <div class="welcome-1">
-                <img src="/assets/fotoperfil2.png" class="picture-profile" " alt=" Picture profile">
+                <img src="/assets/fotoperfil2.png"
+                     class="picture-profile" " alt="
+                     Picture
+                     profile">
             </div>
             <di class="welcome-2">
                 <p>Hello I'm</p>
                 <h1>Mario Calderon D.</h1>
-                <h4> <em>Information Technology Engineer.</em></h4>
+                <h4> <em>Information Technology Engineer</em></h4>
                 <div>
-                    <a target="_blank"  class="cv-button" href="/assets/CV-Mario_Calderon.pdf" download="CV_MarioCalderon.pdf">Descargar CV <img src="/assets/icon/dowload.png"></a>
+                    <a target="_blank"
+                       class="cv-button"
+                       href="/assets/CV-Mario_Calderon.pdf"
+                       download="CV_MarioCalderon.pdf">Descargar CV <img src="/assets/icon/dowload.png"></a>
                 </div>
             </di>
 
         </div>
     </section>
 
-<section id="About">
-    <div class="container-about">
-        <div class="about-one">
-            <button id="read-more">Read more</button>
-        </div>
-        <div class="about-two">
-            <h2>About <span>Me</span></h2>
-            <div class="aux"></div>
-            <p>"I am an Information Technology Engineer graduated from the Luis Vargas Torres Technical University of Esmeraldas. My professional career focuses on software development, where my focus goes beyond simple coding. My main objective is to thoroughly understand the needs of users to transform them into high-quality software products."</p>
-            <p><em>My goal is to not only develop exceptional applications, but also to ensure that every line of code contributes to robust, results-oriented technology solutions. I constantly seek to be aware of the latest trends and agile methodologies to offer innovative products that generate a significant and positive impact on the end user, improving their experience and facilitating their daily processes.</em></p>
-       
-            <div class="about-menu" id="hamburger-menu-about">
-              <div class="bout-menu-content1">
-                  <p>
-                      I consider myself a proactive person with great skills.
-                      adaptation to new functions; with management experience
-                      of projects and ability to direct and coordinate
-                      work teams for the development of tasks that entail
-                      to obtain expected results. I had training with
-                      humanistic vision, and I really want to practice my profession
-                      academic. I am open to constantly learning things
-                      new</p>
-                      <p>For me, each project is an opportunity to establish a meaningful connection, understand the needs and work together with my clients to create solutions that not only meet their expectations, but also exceed their goals. "I'm here to listen and collaborate with you every step of the way, making sure your ideas become tangible realities.</p>
-              </div>
-                    <h3>Personal Skills</h3>
-               <div class="bout-menu-content2" >
-                         <p class="item">Leadership</p>
-                         <p class="item">Proactive</p>
-                         <p class="item">Dynamic</p>
-                         <p class="item">Collaborative</p>
-                         <p class="item">Responsible</p>
-                         <p class="item">Puntuality</p>
-                         <p class="item">Innovative</p>
-                         <p class="item">Communicative</p>
-                     </lu>
-               </div>
+    <!--SECTION ABOUT ME-->
+    <section id="About">
+        <div class="container-about">
+            <div class="about-one">
+                <button id="read-more">Read more</button>
             </div>
+            <div class="about-two">
+                <h2>About <span>Me</span></h2>
+                <div class="aux"></div>
+                <div class="about-text">
+                    <p>"I am an Information Technology Engineer graduated from the Luis Vargas Torres Technical University
+                        of Esmeraldas. My professional career focuses on software development, where my focus goes beyond
+                        simple coding. My main objective is to thoroughly understand the needs of users to transform them
+                        into high-quality software products."</p>
+                    <p><em>My goal is to not only develop exceptional applications, but also to ensure that every line of
+                            code contributes to robust, results-oriented technology solutions. I constantly seek to be aware
+                            of the latest trends and agile methodologies to offer innovative products that generate a
+                            significant and positive impact on the end user, improving their experience and facilitating
+                            their daily processes
+                    </em></p>
+                </div class="about-text">
+
+                <div class="about-menu"
+                     id="hamburger-menu-about">
+                    <div class="bout-menu-content1">
+                        <p>
+                            I consider myself a proactive person with great skills.
+                            adaptation to new functions; with management experience
+                            of projects and ability to direct and coordinate
+                            work teams for the development of tasks that entail
+                            to obtain expected results. I had training with
+                            humanistic vision, and I really want to practice my profession
+                            academic. I am open to constantly learning things
+                            new</p>
+                        <p>For me, each project is an opportunity to establish a meaningful connection, understand the
+                            needs and work together with my clients to create solutions that not only meet their
+                            expectations, but also exceed their goals. "I'm here to listen and collaborate with you
+                            every step of the way, making sure your ideas become tangible realities.</p>
+                    </div>
+                    <h3>Personal Skills</h3>
+                    <div class="bout-menu-content2">
+                        <p class="item">Leadership</p>
+                        <p class="item">Proactive</p>
+                        <p class="item">Dynamic</p>
+                        <p class="item">Collaborative</p>
+                        <p class="item">Responsible</p>
+                        <p class="item">Puntuality</p>
+                        <p class="item">Innovative</p>
+                        <p class="item">Communicative</p>
+                        </lu>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        
-    </div>
-</section>
+    </section>
 
 
     <section id="container-projects">
@@ -126,52 +169,72 @@
             <p><em>These are some examples that reflect my passion and skills for programming...</em></p>
             <div class="project-gallery">
 
-                <a class="project-tile" href="https://t.me/DevCatBot_bot" target="_blank">
-                    <img class="project-image" src="/assets/project11.png">
+                <a class="project-tile"
+                   href="https://t.me/DevCatBot_bot"
+                   target="_blank">
+                    <img class="project-image"
+                         src="/assets/project11.png">
                     <div class="project-title">
                         <h3>ChatBot</h3>
                         <p>DevCat: Java</p>
                     </div>
                 </a>
-                <a class="project-tile" href="https://studio-pixel-dev.netlify.app/" target="_blank">
-                    <img class="project-image" src="/assets/project22.png">
+                <a class="project-tile"
+                   href="https://studio-pixel-dev.netlify.app/"
+                   target="_blank">
+                    <img class="project-image"
+                         src="/assets/project22.png">
                     <div class="project-title">
                         <h3>Website</h3>
                         <p>Studio PixelDev: Bootstrap</p>
                     </div>
                 </a>
-                <a class="project-tile" href="https://calculadora-mario.netlify.app/" target="_blank">
-                    <img class="project-image" src="/assets/project33.png"">
-                    <div class="project-title">
-                        <h3>Calculator</h3>
-                        <p>React + Css</p>
-                    </div>
-                </a>
-                <a class="project-tile" href="https://atarys-store.netlify.app/" target="_blank">
-                    <img class="project-image" src="/assets/project44.png">
-                    <div class="project-title">
-                        <h3>E-commerce</h3>
-                        <p>Store Atarys: Bootstrap+Css+Js</p>
-                    </div>
-                </a>
-                <a class="project-tile" href="https://portafolio-mario-calderon.netlify.app/" target="_blank">
-                    <img class="project-image" src="/assets/project55.png">
-                    <div class="project-title">
-                        <h3>Web Portfolio</h3>
-                        <p>Html+Css+Js</p>
-                    </div>
-                </a>
-                <a class="project-tile" href="https://github.com/ariocal" target="_blank">
-                    <img class="project-image" src="/assets/project66.png">
-                    <div class="project-title">
-                        <h3>Diseño Creativo</h3>
-                        <p>Soon</p>
-                    </div>
-                </a>
+                <a class="project-tile"
+                   href="https://calculadora-mario.netlify.app/"
+                   target="_blank">
+                    <img class="project-image"
+                         src="/assets/project33.png"">
+                    <div class="
+                         project-title">
+                    <h3>Calculator</h3>
+                    <p>React + Css</p>
             </div>
+            </a>
+            <a class="project-tile"
+               href="https://atarys-store.netlify.app/"
+               target="_blank">
+                <img class="project-image"
+                     src="/assets/project44.png">
+                <div class="project-title">
+                    <h3>E-commerce</h3>
+                    <p>Store Atarys: Bootstrap+Css+Js</p>
+                </div>
+            </a>
+            <a class="project-tile"
+               href="https://portafolio-mario-calderon.netlify.app/"
+               target="_blank">
+                <img class="project-image"
+                     src="/assets/project55.png">
+                <div class="project-title">
+                    <h3>Web Portfolio</h3>
+                    <p>Html+Css+Js</p>
+                </div>
+            </a>
+            <a class="project-tile"
+               href="https://github.com/ariocal"
+               target="_blank">
+                <img class="project-image"
+                     src="/assets/project66.png">
+                <div class="project-title">
+                    <h3>Diseño Creativo</h3>
+                    <p>Soon</p>
+                </div>
+            </a>
+        </div>
         </div>
     </section>
 
+    <!--SSECTION SKILL-->
     <section id="Skills">
         <div class="container-skill">
             <h2>Technological Skills</h2>
@@ -182,54 +245,71 @@
                     <h3>Technologies used for our <span>projects</span></h3>
                     <p>I know the technological skills we have for the development of your projects...</p>
                 </div>
+
                 <div class="skill-item-container-two">
                     <div class="skill-item-icon">
                         <div class="skill-icon-conf">
-                            <img class="skill-icon-img" src="/assets/icon/html1.png" alt="Icon css">
+                            <img class="skill-icon-img"
+                                 src="/assets/icon/html1.png"
+                                 alt="Icon css">
                         </div>
                         <p class="color-2">Html</p>
                     </div>
                     <div class="skill-item-icon">
                         <div class="skill-icon-conf">
-                            <img class="skill-icon-img" src="/assets/icon/css1.png" alt="Icon css">
+                            <img class="skill-icon-img"
+                                 src="/assets/icon/css1.png"
+                                 alt="Icon css">
                         </div>
                         <p class="color-2">Css</p>
                     </div>
                     <div class="skill-item-icon">
-                       <div class="skill-icon-conf">
-                         <img class="skill-icon-img" src="/assets/icon/bootstrap.png" alt="Icon css">
-                       </div>
+                        <div class="skill-icon-conf">
+                            <img class="skill-icon-img"
+                                 src="/assets/icon/bootstrap.png"
+                                 alt="Icon css">
+                        </div>
                         <p class="color-2">Bootstrap</p>
                     </div>
                     <div class="skill-item-icon">
-                       <div class="skill-icon-conf">
-                         <img class="skill-icon-img" src="/assets/icon/react.png" alt="Icon css">
-                       </div>
+                        <div class="skill-icon-conf">
+                            <img class="skill-icon-img"
+                                 src="/assets/icon/react.png"
+                                 alt="Icon css">
+                        </div>
                         <p class="color-2">React</p>
                     </div>
                     <div class="skill-item-icon">
-                       <div class="skill-icon-conf">
-                         <img class="skill-icon-img" src="/assets/icon/mysql.png" alt="Icon css">
-                       </div>
+                        <div class="skill-icon-conf">
+                            <img class="skill-icon-img"
+                                 src="/assets/icon/mysql.png"
+                                 alt="Icon css">
+                        </div>
                         <p class="color-2">MySQL</p>
                     </div>
                     <div class="skill-item-icon">
                         <div class="skill-icon-conf">
-                            <img class="skill-icon-img" src="/assets/icon/java.png" alt="Icon css">
+                            <img class="skill-icon-img"
+                                 src="/assets/icon/java.png"
+                                 alt="Icon css">
                         </div>
                         <p class="color-2">Java</p>
                     </div>
 
                     <div class="skill-item-icon">
-                       <div class="skill-icon-conf">
-                         <img class="skill-icon-img" src="/assets/icon/git.png" alt="Icon css">
-                       </div>
+                        <div class="skill-icon-conf">
+                            <img class="skill-icon-img"
+                                 src="/assets/icon/git.png"
+                                 alt="Icon css">
+                        </div>
                         <p class="color-2">Git-GitHub</p>
                     </div>
 
                     <div class="skill-item-icon">
                         <div class="skill-icon-conf">
-                            <img class="skill-icon-img" src="/assets/icon/javascript.png" alt="Icon css">
+                            <img class="skill-icon-img"
+                                 src="/assets/icon/javascript.png"
+                                 alt="Icon css">
                         </div>
                         <p class="color-2">JavaScript</p>
                     </div>
@@ -239,52 +319,68 @@
             </div>
         </div>
     </section>
+
+    <!--SECTION CONTACT-->
     <section id="contact">
         <div class="contact-container">
             <div class="contact-section-header">
                 <h2>Let's work <span>together</span></h2>
                 <p>Get in touch with me</p>
             </div>
-    
+
             <div class="contact-link">
-                <a id="profile-link" href="https://www.facebook.com/MARCAL2.0/" target="_blank">
+                <a id="profile-link"
+                   href="https://www.facebook.com/MARCAL2.0/"
+                   target="_blank">
                     <img src="/assets/icon/facebook.png">
                     <p>"Facebook"</p>
                 </a>
 
-                <a id="profile-link" href="https://github.com/ariocal" target="_blank">
+                <a id="profile-link"
+                   href="https://github.com/ariocal"
+                   target="_blank">
                     <img src="/assets/icon/github.png">
                     <p>"GitHub"</p>
                 </a>
 
-                <a id="profile-link" href="https://www.linkedin.com/in/mario-calderon-76a099b5/" target="_blank">
+                <a id="profile-link"
+                   href="https://www.linkedin.com/in/mario-calderon-76a099b5/"
+                   target="_blank">
                     <img src="/assets/icon/linkedin.png">
                     <p>"Linkedin"</p>
                 </a>
 
-                <a id="profile-link" href="https://www.instagram.com/ario_calderon/" target="_blank">
+                <a id="profile-link"
+                   href="https://www.instagram.com/ario_calderon/"
+                   target="_blank">
                     <img src="/assets/icon/instagram.png">
                     <p>"Instagram"</p>
                 </a>
 
-                <a id="profile-link" href="https://wa.link/jrtsd8" target="_blank">
+                <a id="profile-link"
+                   href="https://wa.link/jrtsd8"
+                   target="_blank">
                     <img src="/assets/icon/whatsapp.png">
                     <p>"+593982626445"</p>
                 </a>
 
-                <a id="profile-link" href="#" target="_blank">
+                <a id="profile-link"
+                   href="#"
+                   target="_blank">
                     <img src="/assets/icon/email1.png">
                     <p>"mario.2893@hotmail.com"</p>
                 </a>
 
             </div>
         </div>
- 
+
     </section>
+
+    <!--SECTION FOOTER-->
     <footer>
-            <p>This is a portfolio of projects.</P>
-            <p>© Created for Mario Calderon</p>
-     
+        <p>This is a portfolio of projects.</P>
+        <p>© Created for Mario Calderon</p>
+
     </footer>
 
 </body>
