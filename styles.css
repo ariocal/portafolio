@@ -1003,10 +1003,10 @@ justify-content: center;
         }
         .welcome-2{
             padding-bottom: 70px;
-            font-size: 2em;
+            font-size: 1.2em;
         }
         .picture-profile{
-            width: 25em;
+            width: 17em;
             padding: 20px 0px;
             
         }
@@ -1017,6 +1017,7 @@ justify-content: center;
             width: 1em;
             height: auto;
         }
+
         /*SECTION ABOUT ME*/
     
         .container-about {
@@ -1056,7 +1057,7 @@ justify-content: center;
         }
         
         .about-text p {
-            font-size: 1.9em;
+            font-size: 1.4em;
             margin-top: 10px;
         }
         
@@ -1087,7 +1088,7 @@ justify-content: center;
         }
         .bout-menu-content1 p{
             padding: 20px;
-            font-size: 1.5em;
+            font-size: 1.3em;
             color: var(--main-color12)
 
         }
@@ -1178,7 +1179,7 @@ justify-content: center;
      
         .color-2{
            color: var(--main-color3);
-           font-size: 1.6em;
+           font-size: 1.3em;
         }
         
         .skill-item-container-two {
@@ -1199,12 +1200,12 @@ justify-content: center;
         }
         .skill-item-container-two .skill-icon-conf{
     
-            width: 103px;
-            height: 105px;
+            width: 83px;
+            height: 85px;
         }
         .skill-icon-conf .skill-icon-img{
-            width: 60px;
-            height: 60px;
+            width: 40px;
+            height: 40px;
             filter: var(--main-color10);
         }
         
@@ -1213,19 +1214,19 @@ justify-content: center;
         margin-bottom: 30px;
        }
         .contact-section-header h2{
-            font-size: 3.4em;
+            font-size: 3em;
             margin-top: 0;
         }
         .contact-section-header p{
-            font-size: 1.9em;
+            font-size: 1.6em;
         }
     
         .contact-container img{
-            width: 1.6em;
+            width: 1em;
             filter: var(--main-color5);
         }
         .contact-link P{
-            font-size: 1.3em;
+            font-size: 1em;
         }
     
     
@@ -1249,7 +1250,7 @@ justify-content: center;
         /*SECTION FOOTER*/
         footer{
             padding: 0px 40px;
-            font-size: 1.7em;
+            font-size: 1.2em;
             text-align: center
         };
     }
@@ -1554,10 +1555,10 @@ justify-content: center;
     /*SECTION WELCOME*/
     .welcome-2{
         padding-bottom: 70px;
-        font-size: 1.6em;
+        font-size: 1.3em;
     }
     .picture-profile{
-        width: 20em;
+        width: 14em;
         padding: 20px 0px;
         
     }
@@ -1603,7 +1604,7 @@ justify-content: center;
     }
     
     .about-text p {
-        font-size: 1.2em;
+        font-size: 1em;
     }
     
     .about-menu {
@@ -1758,7 +1759,7 @@ justify-content: center;
     }
 
     .contact-container img{
-        width: 29px;
+        width: 20px;
         filter: var(--main-color5);
     }
     .contact-link P{
@@ -1777,6 +1778,7 @@ justify-content: center;
 
     #profile-link{
         gap: 10px;
+        font-size: 1.1em;
     }
     
     .contact-link a:hover{
@@ -1786,14 +1788,15 @@ justify-content: center;
     /*SECTION FOOTER*/
     footer{
         padding: 0px 15px;
-        font-size: 1.1em;
+        font-size: 1em;
         text-align: center
     };
 }
 
 
 
-@media(max-width:360px){
+
+@media(max-width:400px){
     /*SECTION WELCOME*/
     .welcome-2{
         padding-bottom: 70px;
