@@ -2,18 +2,18 @@
 :root {
     --main-color1: rgba(245, 245 , 245);
     --main-color2: rgb(0, 244, 238);
-    --main-color9: rgb(69, 86, 125);
-    --main-color11: rgb(69, 86, 125,0.65);
+    --main-color3: rgb(115, 115, 115);
+    --main-color9: rgb(10, 10, 10, 0.9);
     --main-color12: rgb(230,230,230);
+    --main-color11: rgb(115, 115, 115, 0.7);
+    --main-color13: rgb(9, 9, 9);
     --main-color4: invert(9%) sepia(23%) saturate(1115%) hue-rotate(201deg) brightness(94%) contrast(94%);
-    --main-color3: rgb(148,156,165);
     --main-color5: invert(70%) sepia(10%) saturate(282%) hue-rotate(171deg) brightness(87%) contrast(90%);
-    --main-color6: rgb(240,240,240);
+    --main-color6: rgb(247,247,247);
     --main-color10: invert(100%) sepia(12%) saturate(7452%) hue-rotate(205deg) brightness(112%) contrast(110%);
     --main-color7: invert(84%) sepia(51%) saturate(3505%) hue-rotate(123deg) brightness(97%) contrast(108%);
     --main-color8: drop-shadow(-2px 2px 15px var(--main-color4));
     --transition: 0.2s ease-in-out;
-    --main-color15: #f0f0f0;
 }
 
 
@@ -57,38 +57,34 @@ body{
     display: block;
     
 }
-.divider2{
-    fill: var(--main-color15);
-}
+
 /*MODE DARK AND LIGHT*/
 .mode{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: auto;
     align-content: center;
-    margin-top: 4px;
+    background-color: var(--main-color13);
+    width: 30%;
+    height: 70px !important;
 }
 .dark-mode-btn,
 .light-mode-btn{
     border: none;
-    padding: 0;
     background: none;
     cursor: pointer;
-    height: 40px;
     width: auto;
-    margin-left: 20px;
-    margin-right: 20px;
+    height: 100%;
 }
 .dark-mode-btn img{
-    height: 32px;
+    height: 45px;
     width: auto;
-    filter: var(--main-color7);
+    filter: var(--main-color6);
 }
 .light-mode-btn img{
-    height: 32px;
+    height: 45px;
     width: auto;
-    filter: var(--main-color5);
+    filter: var(--main-color6);
 }
 :root[data-theme="light"] .dark-mode-btn{
     display: none;
@@ -98,54 +94,51 @@ body{
 }
 
 /* HEADER SECTION*/
-.logo-img{
-    height: 40px;
-    padding-left: 20px;
- 
-}
 .container-header{
     top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--main-color6);
-    min-height: 80px;
+    background-color: var(--main-color9);
+    min-height: 70px !important;
+    max-height: 70px;
     position: sticky !important;
     width: 100%;
-    padding: 0 20px;
     z-index: 5;
 }
 #navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
- 
+    align-content: center;
+    width: 70%;
 }
 .nav-menu {
+    width: 100%;
     display: flex;
-    align-items: center;
-   justify-content: space-between;
     list-style: none;
-
+    column-gap: 5px; 
+    justify-content: center;  
 }
 
 nav .nav-menu-link{
         text-decoration: none;
-        color: var(--main-color2);
+        color: var(--main-color6);
         text-align: center;
         border: 0;
-        font-weight: 600;        
+        font-weight: 600; 
+        font-size: 1.4em;
 }  
-.nav-item{
-    padding: 28px 18px;
-}
-.nav-item a{
-    font-size: 1.4em;
+.nav-item {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 13%;
 }
 
 .nav-item:hover{
-    color: var(--main-color1);
-    background-color: var(--main-color3);
+    background-color: var(--main-color2);
     transition: 0.5s;
 }
 
@@ -162,78 +155,87 @@ nav .nav-menu-link{
 #welcome-section {
     background-color: var(--main-color6);
     width: 100%;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 70px);
     z-index: 4;
     position: relative;
+    display: flex;
+}
+.welcome-1{
+    width: 30%;
+    background-color: var(--main-color13); 
+}
+.point{
+    color: var(--main-color11);
+    font-size: 2em;
+    margin: 0 10px 0;
+}
+#welcome-section .welcome-2 {
+    color: var(--main-color2);
+    text-align: center;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color6);
+    background-image: linear-gradient(var(--main-color11), var(--main-color9)), url(/assets/about2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#welcome-section .welcome-2 a{
+    border-radius: 20px;
+    border: solid 2px var(--main-color2);
+    padding: 6px 13px;
+    text-decoration: none;
+    font-size: 1.1em;
+    color: var(--main-color2);
+    background-color: transparent;
+    z-index: 10;
+}
+
+#welcome-section .welcome-2 a:hover{
+    background-color: var(--main-color2);
+    color: var(--main-color3);
+    cursor: pointer;
+    border: none;
+    box-shadow: 1px 3px 7px var(--main-color11);
+}
+
+.welcome-2 img{
+    padding-bottom: 4.7px;
+    width: auto;
+    height: 26px;
+    margin-left: 5px;
+    vertical-align: middle;
+    filter: var(--main-color7);
 }
 
 .welcome-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
     max-width: 1100px;
     width: 100%;
     margin: 0 auto;
     height: 100%;
-}
-
-.welcome-1, .welcome-2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-.welcome-2 {
-    color: var(--main-color3);
     flex-direction: column;
-    text-align: center;
-    font-size: 1.5rem;
+    justify-content: center;
+    font-size: 1.5em;
+    color: var(--main-color6);
 }
-
-.picture-profile{
-    transition: all 2000ms ease;
-    text-align:center;
-    cursor: pointer;
-    height: auto;
-    width: 21em;
-    filter: var(--main-color8);
+.aabout{
+    margin-top: 10px;
 }
-.welcome-1:hover .picture-profile{
-    transform: scale(1.1);
-}
-
-.welcome-2 div{
-    padding: 20px;
-}
-.welcome-2 a{
-    border: 2px solid var(--main-color2);
-    border-radius: 19px;
+.aabout a{
+    border-radius: 1px;
     padding: 8px 14px;
     text-decoration: none;
-    font-size: 0.9em;
-    color: var(--main-color2);
-    transition: all 1.2s ease;
-}
-
-.welcome-2 .cv-button:hover{
-    background-color: var(--main-color11);
-    color: var(--main-color2);
-    filter: drop-shadow(-2px 2px 5px var(--main-color9));
-    border: none;
-
-}
-
-
-
-.cv-button img{
-    padding-bottom: 4.7px;
-    width: auto;
-    height: 26px;
-    vertical-align: middle;
-    filter: invert(84%) sepia(61%) saturate(757%) hue-rotate(100deg) brightness(102%) contrast(105%);
+    font-size: 0.77em;
+    color: var(--main-color9);
+    background-color: yellow;
+    font-weight: 600;
+    text-align: center;
 }
 
 /*ABOUT ME*/
@@ -300,7 +302,7 @@ nav .nav-menu-link{
     width: 100%;
     height: 100%;
     position: relative;
-}
+}  
 
 .about-two .aux{
     background-color: var(--main-color2);
@@ -561,7 +563,7 @@ filter: var(--main-color8);
     align-content: space-between;
     justify-content: space-between;
     gap: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .skill-item-icon {
