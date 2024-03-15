@@ -2,7 +2,7 @@
 :root {
     --main-color1: rgba(245, 245 , 245);
     --main-color2: rgb(0, 244, 238);
-    --main-color3: rgb(115, 115, 115);
+    --main-color3: rgb(105, 105, 105);
     --main-color9: rgb(10, 10, 10, 0.9);
     --main-color12: rgb(230,230,230);
     --main-color11: rgb(115, 115, 115, 0.7);
@@ -46,6 +46,7 @@
 body{
     font-size: 16px;
     line-height: 1.4;
+    background-color: var(--main-color6);
 }
 
 .divider{
@@ -105,6 +106,7 @@ body{
     position: sticky !important;
     width: 100%;
     z-index: 5;
+    
 }
 #navbar{
     display: flex;
@@ -191,6 +193,7 @@ nav .nav-menu-link{
     color: var(--main-color2);
     background-color: transparent;
     z-index: 10;
+    transition: all 1.2s ease;
 }
 
 #welcome-section .welcome-2 a:hover{
@@ -199,15 +202,7 @@ nav .nav-menu-link{
     cursor: pointer;
     border: none;
     box-shadow: 1px 3px 7px var(--main-color11);
-}
-
-.welcome-2 img{
-    padding-bottom: 4.7px;
-    width: auto;
-    height: 26px;
-    margin-left: 5px;
-    vertical-align: middle;
-    filter: var(--main-color7);
+    transition: all 1.2s ease;
 }
 
 .welcome-container {
@@ -244,6 +239,8 @@ nav .nav-menu-link{
     height: 100vh;
     z-index: 3;
     border: none;
+    clip-path: ellipse(148% 89% at 61% 2%);
+    background-color: var(--main-color11)
 }
 
 .container-about {
@@ -252,7 +249,8 @@ nav .nav-menu-link{
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    height: 90%;
+    clip-path: ellipse(138% 95% at 75% 5%);
 }
 #About h2{
     color: var(--main-color2);
@@ -267,7 +265,7 @@ nav .nav-menu-link{
 
 .about-one {
     height: 100%;
-    width: 60%;
+    width: 30%;
     background-image: linear-gradient( var(--main-color11), var(--main-color9)), url(/assets/about.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -299,7 +297,7 @@ nav .nav-menu-link{
 
 .about-two {
     background-color: var(--main-color9);
-    width: 100%;
+    width: 70%;
     height: 100%;
     position: relative;
 }  
@@ -318,7 +316,8 @@ nav .nav-menu-link{
     color: var(--main-color12);
     padding: 30px;
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1.35em;
+    margin: 0 60px;
 }
 
 
@@ -328,7 +327,7 @@ nav .nav-menu-link{
     top: -100%; 
     width: 100%;
     height: 100%;
-    background-color: var(--main-color6);
+    background-color: var(--main-color3);
     z-index: 1;
     padding: 20px;
     box-sizing: border-box;
@@ -336,7 +335,7 @@ nav .nav-menu-link{
     
 }
 .about-menu p{
-    color: var(--main-color3);
+    color: var(--main-color6);
 }
 
 .about-menu:hover{
@@ -629,7 +628,7 @@ filter: var(--main-color8);
     color: var(--main-color2);
 }
 .contact-section-header p{
-    color: var(--main-color2);
+    color: var(--main-color10);
     font-size: 1.5em;
 }
 .contact-container img{
@@ -645,15 +644,14 @@ filter: var(--main-color8);
     justify-content: center;
   
 }
-
 .contact-link a{
-    color: var(--main-color3);
+    color: var(--main-color11);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     text-decoration: none;
-    gap: 5px;
+    gap: 12px;
     transition: all 2000ms ease;
     cursor: pointer;
     height: 9vh;
@@ -669,7 +667,7 @@ filter: var(--main-color8);
 footer{
     background-color: var(--main-color6);
     border-top: 2.5px solid var(--main-color2);
-    color: var(--main-color3);
+    color: var(--main-color11);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -947,8 +945,8 @@ justify-content: center;
 }
 
 @media (max-width: 992px){
-    /*SECTION SKILLS*/
 
+    /*SECTION SKILLS*/
 
 .skill-item-icon {
     display: flex;
