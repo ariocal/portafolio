@@ -3,10 +3,10 @@
     --main-color1: rgba(245, 245 , 245);
     --main-color2: rgb(0, 244, 238);
     --main-color3: rgb(105, 105, 105);
-    --main-color9: rgb(10, 10, 10, 0.9);
+    --main-color9: rgb(8, 8, 8, 0.89);
     --main-color12: rgb(230,230,230);
-    --main-color11: rgb(115, 115, 115, 0.7);
-    --main-color13: rgb(9, 9, 9);
+    --main-color11: rgb(105, 105, 105, 0.6);
+    --main-color13: rgb(13, 13, 13);
     --main-color4: invert(9%) sepia(23%) saturate(1115%) hue-rotate(201deg) brightness(94%) contrast(94%);
     --main-color5: invert(70%) sepia(10%) saturate(282%) hue-rotate(171deg) brightness(87%) contrast(90%);
     --main-color6: rgb(247,247,247);
@@ -96,25 +96,32 @@ body{
 
 /* HEADER SECTION*/
 .container-header{
-    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--main-color9);
+    background-color: rgb(9, 9, 9, 0.0);;
     min-height: 70px !important;
     max-height: 70px;
-    position: sticky !important;
+    position:fixed !important;
     width: 100%;
     z-index: 5;
     
 }
+
 #navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     align-content: center;
     width: 70%;
+    transition: all 1.2s ease;
 }
+
+#navbar:hover {
+    background-color: rgba(9, 9, 9, 0.6);
+}
+
+
 .nav-menu {
     width: 100%;
     display: flex;
@@ -123,14 +130,22 @@ body{
     justify-content: center;  
 }
 
-nav .nav-menu-link{
-        text-decoration: none;
-        color: var(--main-color6);
-        text-align: center;
-        border: 0;
-        font-weight: 600; 
-        font-size: 1.4em;
-}  
+.nav-menu-link {
+    text-decoration: none;
+    color: yellow;
+    text-align: center;
+    border: 0;
+    font-weight: 600; 
+    font-size: 1.4em;
+    height: 70px;
+    line-height: 70px;
+    width: 100%;
+}
+
+nav .nav-menu-link:hover{
+    color: var(--main-color3); 
+} 
+
 .nav-item {
     height: 70px;
     display: flex;
@@ -157,7 +172,7 @@ nav .nav-menu-link{
 #welcome-section {
     background-color: var(--main-color6);
     width: 100%;
-    height: calc(100vh - 70px);
+    height: 100vh;
     z-index: 4;
     position: relative;
     display: flex;
@@ -402,40 +417,99 @@ max-width: 1100px;
 }
 .projects h2{
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.9rem;
     padding-top: 35px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     color: var(--main-color3);
 }
 .projects h2 span{
-
     color: var(--main-color2);
 }
 .projects p{
-    color: var(--main-color3);
+    color: var(--main-color11);
     text-align: center;
-    font-size: 1.3rem;
-    margin-bottom: 8px;
+    font-size: 1.4rem;
+    margin-bottom: 40px;
 }
 .projects .project-gallery{
 display: flex;
 flex-wrap: wrap;
-justify-content: space-around;
-
+justify-content: center;
+width: 100%;
+gap: 25px;
 }
-.project-tile{
-   position: relative;
+.galery-items{
     max-width: 340px;
     height: fit-content;
-    margin: 10px;
-    cursor: pointer;
+    border-radius: 10px;
+    background-color: var(--main-color6);
+    box-shadow: 6px 3px 22px rgba(0, 0, 0, 0.3);
+    transition: transform 0.7s ease-in-out;;
 }
-.projects .project-gallery .project-tile img{
+.galery-items:hover {
+    transform: scale(1.05);
+}
+.project-tile{
+    position: relative;
+}
+.project-tile img{
     width: 100%;
     display: block;
-    border-radius: 25px;
-    border: 3px solid var(--main-color2);
-    border-radius: 26px;
+    border-radius: 9px 9px 0 0;
+    min-height: 290px;
+}
+.project-details{
+    margin: 10px 30px;
+}
+.project-details p{
+    text-align: justify;
+    font-size: 0.85em;
+    color: var(--main-color11);
+    font-weight: normal;
+}
+.project-details article{
+    margin-top: 30px;
+}
+.project-details article, .project-skill article{
+    color: var(--main-color3);
+    margin-bottom: 3px;
+    font-weight: bold;
+    font-size: 1em;
+}
+.project-skill{
+    margin: 0px 30px;
+}
+.project-skill .project-skill-used{
+    display: flex;
+    gap: 10px;
+}
+.project-skill-used .skill-used-items{
+    font-size: 0.9em;
+    background-color: var(--main-color6);
+    color: var(--main-color11);
+    padding: 0.5px 5px;
+    min-width: 85px;
+    justify-content: space-between;
+    font-weight: normal;
+    text-align: center;
+    border-bottom: 2px solid var(--main-color2);
+}
+.galery-items .project-skill-repository{
+    margin: 0px 30px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.project-skill-repository p{
+    color: var(--main-color2);
+    font-weight: 600;
+    text-align: start;
+    margin: 0px 30px;
+}
+.project-skill-repository img{
+    width: auto;
+    height: 20px;
+    filter: var(--main-color7);
+ 
 }
 .projects .project-gallery .project-tile .project-title{
     position: absolute;
@@ -451,7 +525,7 @@ justify-content: space-around;
     letter-spacing: 3px;
     opacity: 0;
     font-size: 18px;
-    border-radius: 25px;
+    border-radius: 9px 9px 0 0;
     border: none;
 }
 .projects .project-gallery .project-tile .project-title h3{
@@ -623,17 +697,18 @@ filter: var(--main-color8);
 
 .contact-section-header h2{
     font-size: 3.5em;
+    color: var(--main-color11);
 }
 .contact-section-header span{
     color: var(--main-color2);
 }
 .contact-section-header p{
-    color: var(--main-color10);
+    color: var(--main-color11);
     font-size: 1.5em;
 }
 .contact-container img{
     width: 30px;
-    filter: var(--main-color5);
+    filter: var(--main-color7);
 }
 .contact-link{
     display: flex;
