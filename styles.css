@@ -298,7 +298,7 @@ nav .nav-menu-link:hover{
 .about-one {
     height: 100%;
     width: 30%;
-    background-image: linear-gradient( var(--main-color11), var(--main-color13)), url(/assets/about.jpg);
+    background-image: linear-gradient( var(--main-color11), var(--main-color13)), url(assets/about.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -409,7 +409,7 @@ nav .nav-menu-link:hover{
     
 }
 .about-menu:hover{
-    background-image: linear-gradient(var(--main-color13), var(--main-color11)), url(/assets/fondoweb.png);
+    background-image: linear-gradient(var(--main-color13), var(--main-color11)), url(assets/fondoweb.png);
     background-size: cover;
     background-position: center;
     background-color: var(--main-color3);
@@ -1164,7 +1164,7 @@ footer{
         margin-top: 15.3vh;
         border-bottom: 0;
         padding: 3rem;
-        background-image: url('/assets/fotoperfil2.png');
+        background-image: url('assets/fotoperfil2.png');
         background-size:contain;
         background-position: center;
         background-repeat: no-repeat;
@@ -1380,7 +1380,7 @@ footer{
         overflow: auto;
         border-radius: 5px;
         background-size:cover;
-        background-image: linear-gradient( var(--main-color11), var(--main-color9)), url(/assets/fondoweb.png);
+        background-image: linear-gradient( var(--main-color11), var(--main-color9)), url(assets/fondoweb.png);
         padding: 0rem;
         flex-direction: column;
         gap: 0rem;
