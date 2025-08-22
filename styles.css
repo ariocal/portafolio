@@ -208,7 +208,7 @@ nav .nav-menu-link:hover{
     justify-content: center;
     align-items: center;
     background-color: var(--main-color13);
-    background-image: linear-gradient(var(--main-color11), var(--main-color9)), url(/assets/about2.jpg);
+    background-image: linear-gradient(var(--main-color11), var(--main-color9)), url(assets/about2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
